@@ -7,6 +7,7 @@
 
 img {
     width: 100%;
+    display: block;
 }
 
 a {
@@ -42,7 +43,7 @@ header {
     position: fixed;
 }
 
-header .container {
+header .container.flex-container {
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -83,6 +84,55 @@ header .icons-area {
 /* MAIN */
 main {
     padding-top: 80px;
+}
+
+/* Main: Cards */
+main .container.flex-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+main .container .col {
+    width: calc(100% / 3 - 10px);
+
+    /* TEST */
+    /* height: 500px; */
+    /* background-color: lightcoral;
+    border: 1px solid black; */
+}
+
+.card {
+    /* height: 640px; */
+    padding-bottom: 50px;
+}
+
+.card-bottom {
+    padding-top: 10px;
+
+    /* TEST */
+    /* background-color: lightblue; */
+}
+
+.card-bottom .label {
+    font-size: 14px;
+}
+
+.card-bottom .model {
+    font-weight: 600;
+}
+
+.card-bottom .prices {
+    font-size: 15px;
+}
+
+.card-bottom .price-discounted {
+    color: red;
+    font-weight: 600;
+}
+
+.card-bottom .price-normal {
+    text-decoration: line-through;
 }
 
 /* FOOTER */
