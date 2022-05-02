@@ -7,7 +7,7 @@
 
 img {
     width: 100%;
-    display: block;
+    /* display: block; */
 }
 
 a {
@@ -87,7 +87,7 @@ main {
     padding-top: 80px;
 }
 
-/* Cards */
+/* Cards Columns */
 main .container.flex-container {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -110,17 +110,15 @@ main .container .col {
 }
 
 /* Card-Top */
-.card-image-b {
-    display: none;
+.card-image-a {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* .card-image-a:hover{
+.card:hover .card-image-a {
     display: none;
-} */
-
-/* .card-image-a:hover{
-    display: none;
-} */
+}
 
 .card .heart {
     font-size: 35px;
@@ -135,9 +133,31 @@ main .container .col {
     color: red;
 }
 
+.card .labels {
+    position: absolute;
+    left: 0;
+    bottom: 160px;
+}
+
+.card .labels > * {
+    padding: 5px 11px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}
+
+.card .labels .discount {
+    background-color: red;
+}
+
+.card .labels .tag {
+    background-color: green;
+}
+
 /* Card-Bottom */
 .card-bottom {
-    padding-top: 10px;
+    padding-top: 3px;
+    line-height: 18px;
 
     /* TEST */
     /* background-color: lightblue; */
