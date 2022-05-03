@@ -109,7 +109,7 @@ main .container .col {
     left: 0;
 }
 
-.card:hover .card-image-a {
+.card-top:hover .card-image-a {
     display: none;
 }
 
